@@ -33,7 +33,6 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     puesto_laboral = models.CharField(max_length=100)
-    #Empresa = models.ForeignKey(CL, on_delete=models.CASCADE, null=True)
     # Campos adicionales personalizados según tus necesidades
     # Ejemplo:
     # date_of_birth = models.DateField(null=True, blank=True)
